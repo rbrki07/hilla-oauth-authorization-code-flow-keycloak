@@ -1,7 +1,10 @@
-# Custom project from Hilla
+# Hilla with Keycloak and the Authorization Code Flow of OAuth 2.0
 
-This project can be used as a starting point to create your own Hilla application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+This project uses the Authorization Code Flow of OAuth 2.0 to secure a [Hilla](https://hilla.dev) web app.
+
+The project requires a local running Keycloak instance, that has to be configured in a certain way.
+
+Please check out the corresponding [blog post](https://www.rene-wilby.de/en/blog/hilla-oauth-authorization-code-flow-keycloak), to find out more about the project, its intention and how to use it.
 
 ## Running the application
 

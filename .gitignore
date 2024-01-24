@@ -39,3 +39,9 @@ out/
 
 # VS Code
 .vscode/
+
+# macOS
+.DS_Store
+
+# Contains secrets and user/env specific config that shouldn't go into the repository
+config/local/
