@@ -1,7 +1,7 @@
 package com.example.application.entities;
 
 import dev.hilla.Nonnull;
-import org.springframework.security.oauth2.core.oidc.OidcUserInfo;
+import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 
 import java.util.Collection;
 
@@ -22,11 +22,11 @@ public class User {
     @Nonnull
     private Collection<String> roles;
 
-    public User(OidcUserInfo userInfo, Collection<String> roles) {
-        this.username = userInfo.getPreferredUsername();
-        this.firstname =userInfo.getGivenName();
-        this.lastname = userInfo.getFamilyName();
-        this.email = userInfo.getEmail();
+    public User(OidcUser oidcUser, Collection<String> roles) {
+        this.username = oidcUser.getPreferredUsername();
+        this.firstname = oidcUser.getGivenName();
+        this.lastname = oidcUser.getFamilyName();
+        this.email = oidcUser.getEmail();
         this.roles = roles;
     }
 

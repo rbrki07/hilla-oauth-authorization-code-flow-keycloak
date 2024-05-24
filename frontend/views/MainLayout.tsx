@@ -15,7 +15,7 @@ const navLinkClasses = ({ isActive }: any) => {
 
 export default function MainLayout() {
   const currentTitle = useRouteMetadata()?.title ?? 'My App';
-  const { state, logout } = useAuth();
+  const { state, logout, hasAccess } = useAuth();
   useEffect(() => {
     document.title = currentTitle;
   }, [currentTitle]);
@@ -29,19 +29,19 @@ export default function MainLayout() {
             <NavLink className={navLinkClasses} to="/">
               Hello World
             </NavLink>
-            <NavLink className={navLinkClasses} to="/about">
-              About
-            </NavLink>
-            {state.user?.roles.indexOf('IC') !== -1 && (
+            {hasAccess({ rolesAllowed: ['ROLE_IC'] }) && (
               <NavLink className={navLinkClasses} to="/ic">
                 IC
               </NavLink>
             )}
-            {state.user?.roles.indexOf('Manager') !== -1 && (
+            {hasAccess({ rolesAllowed: ['ROLE_MANAGER'] }) && (
               <NavLink className={navLinkClasses} to="/manager">
                 Manager
               </NavLink>
             )}
+            <NavLink className={navLinkClasses} to="/about">
+              About
+            </NavLink>
           </nav>
         </header>
         <footer className="flex flex-col gap-s">

@@ -16,8 +16,8 @@ export const routes: RouteObject[] = protectRoutes([
     children: [
       { path: '/', element: <HelloWorldView />, handle: { title: 'Hello World', requiresLogin: true } },
       { path: '/about', element: <AboutView />, handle: { title: 'About', requiresLogin: true } },
-      { path: '/ic', element: <ICView />, handle: { title: 'IC', rolesAllowed: ['IC'] } },
-      { path: '/manager', element: <ManagerView />, handle: { title: 'Manager', rolesAllowed: ['Manager'] } },
+      { path: '/ic', element: <ICView />, handle: { title: 'IC', rolesAllowed: ['ROLE_IC'] } },
+      { path: '/manager', element: <ManagerView />, handle: { title: 'Manager', rolesAllowed: ['ROLE_MANAGER'] } },
       { path: '/access-denied', element: <AccessDeniedView />, handle: { title: 'Access denied' } },
     ],
   },

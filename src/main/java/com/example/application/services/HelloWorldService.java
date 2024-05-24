@@ -1,14 +1,12 @@
 package com.example.application.services;
 
-import com.vaadin.flow.server.auth.AnonymousAllowed;
 import dev.hilla.BrowserCallable;
-import org.springframework.stereotype.Service;
+import jakarta.annotation.security.RolesAllowed;
 
 @BrowserCallable
-@AnonymousAllowed
-@Service
 public class HelloWorldService {
 
+    @RolesAllowed({"ROLE_IC", "ROLE_MANAGER"})
     public String sayHello(String name) {
         if (name.isEmpty()) {
             return "Hello stranger";
