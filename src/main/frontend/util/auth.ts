@@ -1,4 +1,4 @@
-import { configureAuth } from '@hilla/react-auth';
+import { configureAuth } from '@vaadin/hilla-react-auth';
 import { UserAuthenticationService } from 'Frontend/generated/endpoints';
 
 const auth = configureAuth(UserAuthenticationService.getAuthenticatedUser);

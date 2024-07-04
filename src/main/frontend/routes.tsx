@@ -2,7 +2,7 @@ import HelloWorldView from 'Frontend/views/helloworld/HelloWorldView.js';
 import MainLayout from 'Frontend/views/MainLayout.js';
 import { lazy } from 'react';
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
-import { protectRoutes } from '@hilla/react-auth';
+import { protectRoutes } from '@vaadin/hilla-react-auth';
 
 const AboutView = lazy(async () => import('Frontend/views/about/AboutView.js'));
 const AccessDeniedView = lazy(async () => import('Frontend/views/error/AccessDeniedView.js'));

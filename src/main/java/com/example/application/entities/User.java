@@ -1,6 +1,6 @@
 package com.example.application.entities;
 
-import dev.hilla.Nonnull;
+import com.vaadin.hilla.Nonnull;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 
 import java.util.Collection;

@@ -1,6 +1,6 @@
 package com.example.application.services;
 
-import dev.hilla.BrowserCallable;
+import com.vaadin.hilla.BrowserCallable;
 import jakarta.annotation.security.RolesAllowed;
 
 @BrowserCallable

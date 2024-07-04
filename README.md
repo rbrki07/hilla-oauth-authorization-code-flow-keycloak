@@ -1,6 +1,6 @@
 # Hilla with Keycloak and the Authorization Code Flow of OAuth 2.0
 
-This project uses the Authorization Code Flow of OAuth 2.0 to secure a [Hilla](https://hilla.dev) web app.
+This project uses the Authorization Code Flow of OAuth 2.0 to secure a [Hilla](https://vaadin.com/hilla) web app.
 
 The project requires a local running Keycloak instance, that has to be configured in a certain way.
 
@@ -30,13 +30,13 @@ Once the JAR file is built, you can run it using
 
 <table style="width:100%; text-align: left;">
   <tr><th>Directory</th><th>Description</th></tr>
-  <tr><td><code>frontend/</code></td><td>Client-side source directory</td></tr>
+  <tr><td><code>src/main/frontend/</code></td><td>Client-side source directory</td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.html</code></td><td>HTML template</td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.ts</code></td><td>Frontend 
 entrypoint, bootstraps a React application</td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>routes.tsx</code></td><td>React Router routes definition</td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>MainLayout.tsx</code></td><td>Main 
-layout component, contains the navigation menu, uses <a href="https://hilla.dev/docs/react/components/app-layout">
+layout component, contains the navigation menu, uses <a href="https://vaadin.com/docs/latest/components/app-layout">
 App Layout</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>views/</code></td><td>UI view 
 components</td></tr>
@@ -49,6 +49,6 @@ source directory, contains the server-side Java views</td></tr>
 
 ## Useful links
 
-- Read the documentation at [hilla.dev/docs](https://hilla.dev/docs/).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
+- Read the documentation at [https://vaadin.com/docs](https://vaadin.com/docs/latest/hilla).
+- Join our [Forum](https://vaadin.com/forum/c/hilla/18) and ask questions.
 - Report issues, create pull requests in [GitHub](https://github.com/vaadin/hilla).
